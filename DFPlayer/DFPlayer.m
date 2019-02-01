@@ -773,6 +773,14 @@ NSString * const DFPlaybackLikelyToKeepUpKey    = @"playbackLikelyToKeepUp";
     [self.player pause];
 }
 
+/**停止*/
+-(void)df_audioStop{
+    _isPlaying = NO;
+    self.state = DFPlayerStateStopped;
+    [self.player pause];
+    [self df_deallocPlayer];
+}
+
 /**下一首*/
 - (void)df_audioNext{
     switch (self.playMode) {

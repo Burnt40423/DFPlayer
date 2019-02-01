@@ -211,6 +211,11 @@ typedef NS_ENUM(NSUInteger, DFPlayerStatusCode) {
 - (void)df_audioPause;
 
 /**
+ 停止
+ */
+-(void)df_audioStop;
+
+/**
  下一首
  */
 - (void)df_audioNext;
